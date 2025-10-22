@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NVDA</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    function go(url){
+      if(confirm('Перейти на другую страницу?')){
+        location.href = url;
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <span class="brand" tabindex="-1">СКРИНРИДЕРЫ</span>
+      <div class="nav">
+        <span class="nav-item" tabindex="-1" onclick="go('index.html')">Обзор</span>
+        <span class="nav-item active" tabindex="-1" onclick="go('nvda.html')">NVDA</span>
+        <span class="nav-item" tabindex="-1" onclick="go('voiceover.html')">VoiceOver</span>
+      </div>
+    </div>
+
+    <div class="hero">
+      <span class="hero-title">NVDA</span>
+    </div>
+
+    <div class="content">
+      <div class="card">
+        <span class="card-title">Кратко</span>
+        <span class="card-text">
+          NVDA — свободный скринридер для Windows.
+        </span>
+      </div>
+
+      <div class="card">
+        <span class="card-title">Возможности</span>
+        <div class="list bullets">
+          <span class="list-item">Озвучивание интерфейса и текста.</span>
+          <span class="list-item">Поддержка брайлевских дисплеев.</span>
+          <span class="list-item">Горячие клавиши навигации.</span>
+        </div>
+      </div>
+
+      <div class="cta">
+        <span class="button" tabindex="-1" onclick="go('index.html')">Назад</span>
+        <span class="button secondary" tabindex="-1" onclick="go('voiceover.html')">К VoiceOver</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>© 2025 Некрасов Богдан Группа P4150</span>
+    </div>
+  </div>
+</body>
+</html>

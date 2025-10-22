@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Скринридеры</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    function go(url){
+      if(confirm('Перейти на другую страницу?')){
+        location.href = url;
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <span class="brand" tabindex="-1">СКРИНРИДЕРЫ</span>
+      <div class="nav">
+        <span class="nav-item" tabindex="-1" onclick="go('index.html')">Обзор</span>
+        <span class="nav-item" tabindex="-1" onclick="go('nvda.html')">NVDA</span>
+        <span class="nav-item" tabindex="-1" onclick="go('voiceover.html')">VoiceOver</span>
+      </div>
+    </div>
+
+    <div class="hero">
+      <span class="hero-title">Что такое скринридеры</span>
+    </div>
+
+    <div class="content">
+      <div class="card">
+        <span class="card-title">Зачем они нужны</span>
+        <span class="card-text">
+          Программы экранного доступа озвучивают интерфейс и текст.
+        </span>
+      </div>
+
+      <div class="card">
+        <span class="card-title">Популярные</span>
+        <div class="list">
+          <span class="list-item" onclick="go('nvda.html')" tabindex="-1">NVDA (Windows)</span>
+          <span class="list-item" onclick="go('voiceover.html')" tabindex="-1">VoiceOver (Apple)</span>
+        </div>
+      </div>
+
+      <div class="cta">
+        <span class="button" tabindex="-1" onclick="go('nvda.html')">Перейти к NVDA</span>
+        <span class="button secondary" tabindex="-1" onclick="go('voiceover.html')">Перейти к VoiceOver</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>© 2025 Некрасов Богдан Группа P4150</span>
+    </div>
+  </div>
+</body>
+</html>

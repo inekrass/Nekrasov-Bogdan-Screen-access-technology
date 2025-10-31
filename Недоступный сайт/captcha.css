@@ -1,0 +1,132 @@
+/* Стили для системы капчи */
+.captcha-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+}
+
+.captcha-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.captcha-content h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 20px;
+}
+
+.captcha-content p {
+    margin: 0 0 20px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.captcha-image-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.captcha-image-container canvas {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+#captcha-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    margin: 15px 0;
+    box-sizing: border-box;
+}
+
+#captcha-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.captcha-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.captcha-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.captcha-buttons button:first-child {
+    background-color: #28a745;
+    color: white;
+}
+
+.captcha-buttons button:first-child:hover {
+    background-color: #218838;
+}
+
+.captcha-buttons button:nth-child(2) {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.captcha-buttons button:nth-child(2):hover {
+    background-color: #e0a800;
+}
+
+.captcha-buttons button:last-child {
+    background-color: #dc3545;
+    color: white;
+}
+
+.captcha-buttons button:last-child:hover {
+    background-color: #c82333;
+}
+
+.captcha-error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 10px;
+    min-height: 20px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 480px) {
+    .captcha-content {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .captcha-buttons {
+        flex-direction: column;
+    }
+    
+    .captcha-buttons button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
